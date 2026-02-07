@@ -18,6 +18,14 @@ body {
   background-size: cover;
   color: $white;
   display: grid;
+  min-height: 100dvh;
+
+  .container {
+    margin: 0 2rem;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 header {
@@ -32,6 +40,7 @@ header {
 
 main {
   display: flex;
+  flex: 1 0;
   padding: 2em;
 
   section {
@@ -104,6 +113,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 2em;
 
   .socials {
     list-style: none;
@@ -140,7 +150,7 @@ footer {
   main {
     section {
       flex-direction: row;
-      
+
       .image-container {
         width: 50%;
       }
@@ -160,6 +170,5 @@ footer {
 
   footer {
     justify-content: flex-end;
-    padding: 1em 2em;
   }
 }
