@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: hsl(0, 0%, 100%);
+  display: grid;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2em;
+}
+header img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  padding: 2em;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  width: 100%;
+}
+main section .image-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main section .image-container picture {
+  display: flex;
+  width: 100%;
+}
+main section .image-container picture img {
+  width: 100%;
+  min-width: 520px;
+}
+main section .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+main section .details h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 600;
+}
+main section .details p {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.125rem, 2vw, 1.6rem);
+  line-height: 1.5;
+}
+main section .details .btn {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(257, 40%, 49%);
+  padding: 15px;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+  max-width: 240px;
+  width: 100%;
+  font-size: 1.25rem;
+}
+main section .details .btn:hover {
+  background-color: hsl(300, 69%, 81%);
+  color: hsl(0, 0%, 100%);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+footer .socials {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+footer .socials li a {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+footer .socials li a:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+  }
+  main section {
+    flex-direction: row;
+  }
+  main section .image-container {
+    width: 50%;
+  }
+  main section .details {
+    align-items: flex-start;
+    text-align: left;
+    width: 50%;
+    padding: 5rem 2rem;
+  }
+  main section .details .btn {
+    text-align: center;
+  }
+  footer {
+    justify-content: flex-end;
+    padding: 1em 2em;
+  }
+}/*# sourceMappingURL=style.css.map */
